@@ -17,8 +17,9 @@ Family_Members = {
 }
 for generation, person in Family_Members.items():
 	print("\n" + generation + ":\n")
+	print(variable + "s: ")
 	for human, relation in person.items():
 		if relation == "Brother" or "Cousin" or "Parent" or "Uncle" or "Grandparent" or "Great-Uncle":
 			variable = relation
-		print(variable + "s: " + human)
+		 print(human + ", ")
 	print("\n")
